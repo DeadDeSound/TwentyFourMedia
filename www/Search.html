@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+        <link href="Design/MyCss.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+            <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/ng-cordova.min.js"></script>
+        <link href="Design/FontAr/Font.css" rel="stylesheet" />
+        <link href="Design/Taps/MyCss2.css" rel="stylesheet" />
+        <link href="Design/Css3.css" rel="stylesheet" />
+        <script type="text/javascript">
+            function MM_jumpMenu(targ, selObj, restore) { //v3.0
+                eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+                if (restore)
+                    selObj.selectedIndex = 0;
+            }
+        </script>
+    </head>
+    <body ng-app="app">
+    <ion-pane ng-controller="MyController">
+
+        <ion-side-menus>
+            <ion-side-menu-content>
+
+
+                <ion-header-bar class="topContainer" id="TopBar">
+                    <div ng-include="'HeaderDesign.html'"></div>
+                    <div class="Clear"></div>
+                </ion-header-bar>
+
+
+
+
+
+                <ion-content style="overflow: hidden" ng-controller="searchController">
+
+                    <!--<div style="height: 6.3em"></div>-->
+
+
+                    <div class="Clear"></div>
+
+
+                    <ion-view view-title="Main">
+                        <ion-content class="padding">
+                            <ion-list>
+                                <h3 class="item bg-Arabic animated bounceInDown">بحث في الأخبار</h3>
+                                <ion-item class="No-Item animated bounceInRight">
+                                    <div class="Normal-Paragrah" style="padding:1em;"></div>
+
+                                    <div class="Normal-Paragrah" style="padding:.8em .4em;">
+                                        <input name="Keyword" type="text" dir="rtl" style="width:100%; border-radius:.5em; border:1px #CCC solid; padding:1.5em;" placeholder="كلمة البحث" ng-model="model.title">
+                                    </div>
+                                    <div class="Normal-Paragrah" style="padding:.8em .4em;">
+                                        <input name="Calendar" type="text" dir="rtl" style="width:100%; border-radius:.5em; border:1px #CCC solid; padding:1.5em;" placeholder="تاريخ الخبر" ng-model="model.date">
+                                    </div>
+                                    <div class="Normal-Paragrah" style="padding:.8em .4em;">
+                                        <select style="width:100%; border-radius:.5em; border:1px #CCC solid; padding:.8em; color:#333;" ng-model="model.sectionId">
+                                            <option value='31' >عربي</option>
+                                            <option value='32' >دولي</option>
+                                            <option value='55' >لايف ستايل</option>
+                                            <option value='47' >الرياضة</option>
+                                            <option value='130' >منوعات</option>
+                                            <option value='88' >الإمارات</option>
+                                            <option value='39' >إتجاهات</option>
+                                            <option value='208' >تكنولوجيا</option>
+                                            <option value='61' >صحة</option>
+                                            <option value='73' >ثقافة</option>
+                                            <option value='86' >شباب</option>
+                                            <option value='127' >مال و أعمال</option>
+                                        </select>
+                                    </div>
+                                    <div class="Normal-Paragrah" style="padding:.8em .4em;">
+                                        <input name="بحث" value="بحث" type="button" style="width:100%; border-radius:.5em; background-color:#167ab6; color:#fff; padding:1.2em; border:none;" ng-click="search()">
+                                    </div>
+
+                                </ion-item>
+                            </ion-list>
+                            <div class="Block-Margin-Bottom1 Clear"></div>
+
+                        </ion-content>
+                    </ion-view>
+
+                </ion-content>
+
+
+            </ion-side-menu-content>
+
+
+            <ion-side-menu side="right">
+                <div class="RightMenuTaps" ng-include="'Menu.html'"></div>
+            </ion-side-menu>
+
+        </ion-side-menus>  
+
+
+
+
+
+    </ion-pane>
+
+</body>
+</html>

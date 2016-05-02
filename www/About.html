@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="Design/MyCss.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
+    <link href="Design/FontAr/Font.css" rel="stylesheet"/>
+    <link href="Design/Taps/MyCss2.css" rel="stylesheet"/>
+    <link href="Design/Css3.css" rel="stylesheet"/>
+</head>
+<body ng-app="app">
+<ion-pane ng-controller="MyController">
+
+    <ion-side-menus>
+        <ion-side-menu-content>
+
+
+            <ion-header-bar class="topContainer" id="TopBar">
+               <div ng-include="'HeaderDesign.html'"></div>
+                <div class="Clear"></div>
+            </ion-header-bar>
+            <ion-content style="overflow: hidden">
+
+                <!--<div style="height: 6.3em"></div>-->
+
+
+                <div class="Clear"></div>
+
+
+                <ion-view view-title="Main">
+                    <ion-content class="padding">
+                        <ion-list>
+                            <h3 class="item bg-Arabic animated bounceInDown">من نحن</h3>
+                            <ion-item class="No-Item animated bounceInRight">
+                                <p class="Normal-Paragrah">
+                                    نحن منبر إعلامي ينطلق من دولة الإمارات العربية المتحدة إلى الدول العربية والعالم.
+                                </p>
+
+                                <p class="Normal-Paragrah">
+                                    ويشكّل موقع 24 الإلكتروني جزءاً من مجموعة مبادرات إعلامية تحت مظلة "24 للدراسات
+                                    الإعلامية"، وهو يلتزم خطّها الإعلامي والسياسي ويتوخّى خدمة أهدافها في المساهمة في
+                                    تكوين بيئة إعلامية جادّة ورصينة ترمي إلى إشاعة قيم التعددية والتسامح وتعايش الثقافات
+                                    ونبذ التعصّب والتزمّت بشتى أشكاله وتعبيراته.
+                                </p>
+
+                                <p class="Normal-Paragrah">
+                                    كما يسعى 24 إلى أن يكون جزءاً من مشهد إعلامي حديث ومتطور يستفيد من أحدث التقنيات في
+                                    عالم الميديا والاتصال متسلحاً بقيم مهنية رفيعة تتوخى المصداقية والموضوعية وتبتعد عن
+                                    الترويج لكلّ ما يتناقض مع القيم الإنسانية.
+                                </p>
+
+                                <p class="Normal-Paragrah">
+                                    يتكون فريق عمل 24 من نخبة من الإعلاميين الإماراتيين والعرب ممن يتمتعون بتجارب مهنية
+                                    مرموقة ولاسيما في مجال الإعلام الإلكتروني، وهم في غالبيتهم من الشابات والشبان
+                                    الطامحين الهادفين إلى إنجاز تجربة مميزة وجديدة على المشهد الإعلامي العربي.
+                                </p>
+
+                                <p>
+
+                                </p>
+                            </ion-item>
+                        </ion-list>
+                        <div class="Block-Margin-Bottom1 Clear"></div>
+
+                        <ion-list>
+                            <ion-item class="No-Item animated bounceInRight">
+                                <h3 class="Title-Two">يمكنكم التواصل معنا من خلال البريد الإلكتروني: </h3>
+
+                                <h3>24@24.ae </h3>
+
+                                <div class="Block-Margin-Bottom1 Clear"></div>
+
+                                <h3 class="Title-Two">أو من خلال مواقع التواصل الاجتماعي: </h3>
+
+                                <h3>تويتر: 20fourMedia </h3>
+
+                                <h3>فيسبوك: 24Media</h3>
+
+                                <div class="Block-Margin-Bottom1 Clear"></div>
+
+                                <h3 class="Title-Two">أو من خلال المراسلات البريدية على عنوان:</h3>
+
+                                <h3>موقع 24</h3>
+
+                                <h3>شارع السلام - بجانب روتانا بارك twofour54</h3>
+
+                                <h3>أبوظبي- الإمارات العربية المتحدة</h3>
+
+                                <h3>صندوق بريد: 77972</h3>
+
+                                <h3>هاتف: 26942000(971+)</h3>
+
+                                <h3>فاكس: 26218422(971+)</h3>
+
+                                <div class="Block-Margin-Bottom1 Clear"></div>
+
+
+                            </ion-item>
+                        </ion-list>
+
+                        <div class="Block-Margin-Bottom1 Clear"></div>
+
+                    </ion-content>
+                </ion-view>
+
+
+            </ion-content>
+
+
+        </ion-side-menu-content>
+
+        <ion-side-menu side="right">
+            <div class="RightMenuTaps" ng-include="'Menu.html'"></div>
+        </ion-side-menu>
+
+    </ion-side-menus>
+
+
+</ion-pane>
+
+</body>
+</html>
