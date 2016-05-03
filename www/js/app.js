@@ -38,8 +38,8 @@ app.run(function ($ionicPlatform) {
             console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
         };
 
-        window.plugins.OneSignal.init("33cf97bb-8ec2-439f-981f-f2f3b573d8af",
-            {googleProjectNumber: "408326240588"},
+        window.plugins.OneSignal.init("3de1fc0c-4414-4bdb-91f2-c2243907c629",
+            {googleProjectNumber: "475550776665"},
             notificationOpenedCallback);
 
         // Show an alert box if a notification comes in when the user is in your app.
